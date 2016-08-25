@@ -1,0 +1,7 @@
+MX6BLUEOX BOARD
+M:	Andy Hall <andrew.hall@flir.com>
+S:	Maintained
+F:	board/freescale/mx6blueox/
+F:	include/configs/mx6blueox.h
+F:	configs/mx6qblueox_defconfig
+

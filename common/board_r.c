@@ -236,7 +236,6 @@ static int initr_pci(void)
 #ifndef CONFIG_DM_PCI
 	pci_init();
 #endif
-
 	return 0;
 }
 #endif
@@ -319,8 +318,6 @@ static int initr_flash(void)
 {
 	ulong flash_size = 0;
 	bd_t *bd = gd->bd;
-
-	puts("Flash: ");
 
 	if (board_flash_wp_on())
 		printf("Uninitialized - Write Protect On\n");
@@ -535,7 +532,6 @@ static int initr_ethaddr(void)
 #ifdef CONFIG_CMD_KGDB
 static int initr_kgdb(void)
 {
-	puts("KGDB:  ");
 	kgdb_init();
 	return 0;
 }
